@@ -1,0 +1,1 @@
+web java $JAVA_OPTS -Ddw.server.connector.port=$PORT -jar target/dropwizard-heroku-template*.jar server src/main/resources/heroku-config.yml

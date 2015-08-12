@@ -1,0 +1,29 @@
+#database:
+#  driverClass: org.postgresql.Driver
+#  user: <your user>
+#  password: <your password>
+#  url: jdbc:postgresql://host/db
+#  properties:
+#    charSet: UTF-8
+#  maxWaitForConnection: 1s
+#  validationQuery: "/* RoosterService Health Check */ SELECT 1"
+#  validationInterval: 3s
+#  minSize: 8
+#  maxSize: 32
+#  checkConnectionWhileIdle: false
+#  evictionInterval: 10s
+#  minIdleTime: 1 minute
+
+server:
+  type: simple
+  connector:
+    type: http
+    port: 8090
+
+logging:
+  level: INFO
+  loggers:
+    com.diogosantos: DEBUG
+  appenders:
+    - type: console
+
